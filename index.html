@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>JSON-to-Go: Convert JSON to Go instantly</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <div class="title">
+                <h1>Indented Note to Outlines</h1>
+                <h2></h2>
+            </div>
+            <div>
+                <p>1. 请在左边粘贴有换行缩进的文本</p>
+                <p>2. 点击格式化按钮</p>
+                <p>3. 点击复制按钮</p>
+                <p>4. 默认空格缩进为2个空格</p>
+            </div>
+            <div>
+                <!-- <img src="resources/images/json-to-go.png" id="brand"> -->
+            </div>
+        </div>
+    </header>
+    <table>
+        <tbody>
+            <tr>
+                <th style="width: 45%;">Indent Text
+                    <!-- <label>缩进数<input type="text" id="intend_num" value="2"></label> -->
+                    <span class="copy" id="copy-btn" onclick="formatText()">Format</span>
+                </th>
+                <th style="width: 10%; font-size: 22px;">→</th>
+                <th style="width: 45%;">
+                    Outline
+                    <span class="copy" id="copy-btn" onclick="copyToClipboard()">Copy</span>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td style="width: 50%;">
+                    <textarea id="input" contenteditable="" class="tab-indent"></textarea>
+                </td>
+                <td style="width: 50%;">
+                    <textarea id="output" class="tab-indent"></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        © 2023 Ren
+        <br>
+    </footer>
+    <div id="gtx-trans" style="position: absolute; left: 1067px; top: 249.5px;">
+        <div class="gtx-trans-icon"></div>
+    </div>
+    <script type="text/javascript" src="outline.js"></script>
+</body>
+</html>
